@@ -1,0 +1,27 @@
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #121214;
+  color: #e1e1e6;
+  font-family: sans-serif;
+}
+
+.main-content {
+  flex: 1; 
+  padding: 40px;
+  overflow-y: auto;
+}
+
+.home-page {
+  max-width: 920px;
+}
+
+.home-image {
+  width: 100%;
+  max-width: 920px;
+  display: block;
+  margin: 32px 0 0;
+  border-radius: 20px;
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.35);
+  object-fit: cover;
+}
