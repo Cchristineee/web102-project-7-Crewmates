@@ -16,6 +16,18 @@
   max-width: 920px;
 }
 
+.home-page h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #d1fa71;
+  margin-bottom: 16px;
+}
+
+.home-page p {
+  color: #a8a8b3;
+  margin-bottom: 32px;
+}
+
 .home-image {
   width: 100%;
   max-width: 920px;
