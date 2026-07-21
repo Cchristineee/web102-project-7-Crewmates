@@ -1,0 +1,158 @@
+.gallery-container {
+  max-width: 850px;
+  color: #e1e1e6;
+}
+
+.gallery-header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.gallery-header p {
+  color: #a8a8b3;
+  margin-bottom: 32px;
+}
+
+.loading-state,
+.empty-state {
+  background-color: #1a1a1e;
+  border: 1.5px dashed #3a3a40;
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+  color: #a8a8b3;
+}
+
+.create-link-btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 20px;
+  background-color: #d1fa71;
+  color: #121214;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.gallery-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 65vh;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.gallery-list::-webkit-scrollbar {
+  width: 6px;
+}
+.gallery-list::-webkit-scrollbar-thumb {
+  background: #3a3a40;
+  border-radius: 4px;
+}
+
+
+.smiski-card {
+  background-color: #1a1a1e;
+  border: 1.5px solid #3a3a40;
+  border-radius: 16px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.smiski-card:hover {
+  border-color: #d1fa71;
+  transform: translateY(-2px);
+}
+
+.card-main-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+
+.smiski-card-avatar {
+  width: 60px;
+  height: 60px;
+  background-color: #d1fa71;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.smiski-face {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+
+.smiski-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.smiski-meta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 16px;
+  font-size: 0.9rem;
+  color: #a8a8b3;
+}
+
+.smiski-meta-grid span {
+  color: #d1fa71;
+  font-weight: 600;
+}
+
+
+.edit-btn {
+  background-color: transparent;
+  border: 1.5px solid #d1fa71;
+  color: #d1fa71;
+  padding: 10px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.edit-btn:hover {
+  background-color: #d1fa71;
+  color: #121214;
+}
+
+.scroll-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 16px;
+  color: #a8a8b3;
+  font-size: 0.85rem;
+  gap: 2px;
+}
+
+.down-arrow {
+  font-size: 1.2rem;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(4px); }
+}
