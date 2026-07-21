@@ -7,6 +7,7 @@
   font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 4px;
+  color: #d1fa71;
 }
 
 .gallery-header p {
@@ -136,6 +137,7 @@
   background-color: #d1fa71;
   color: #121214;
 }
+
 
 .scroll-indicator {
   display: flex;
