@@ -14,11 +14,12 @@ export default function SkiskiGallery () {
       const { data, error } = await supabase
         .from('Smiski') 
         .select('*')
-        .order('created_at', { ascending: false });
+        .order('name', { ascending: true });
 
     if (error) {
         console.error('Error fetching gallery:', error.message);
       } else {
+        console.log('Fetched Smiskis:', data);
         setSmiskis(data || []);
       }
       setLoading(false);
@@ -71,9 +72,9 @@ export default function SkiskiGallery () {
 
                 {/* ✧˖° Right Side: Edit / View Button ✧˖° */}
                 <div className="card-actions">
-                  <Link to={`/edit/${smiski.id}`} className="edit-btn">
+                  <Link to={`/edit/${encodeURIComponent(smiski.name)}`} className="edit-btn">
                     Edit Smiski
-                  </Link>
+                </Link>
                 </div>
               </div>
             ))}
