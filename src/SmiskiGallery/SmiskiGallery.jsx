@@ -80,7 +80,7 @@ export default function SkiskiGallery () {
             ))}
           </div>
 
-          {/* ✧˖° Scroll Down Indicator from Wireframe ✧˖° */}
+          {/* ✧˖° Scroll Down Indicator ✧˖° */}
           {smiskis.length > 2 && (
             <div className="scroll-indicator">
               <span>Scroll down</span>

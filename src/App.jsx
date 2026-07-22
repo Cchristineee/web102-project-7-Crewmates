@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Sidebar from './Sidebar/sidebar';
 import CreateSmiski from './CreateSmiski/CreateSmiski';
 import SmiskiGallery from './SmiskiGallery/SmiskiGallery';
+import EditSmiski from './EditSmiski/EditSmiski';
 import smiskiHome from './Smiskis/Smiski Home.webp';
 import smiskiSidebar from './Smiskis/Smiski-Working.png';
 import './App.css';
@@ -28,6 +29,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/create" element={<CreateSmiski />} />
             <Route path="/gallery" element={<SmiskiGallery />} />
+            <Route path="/edit/:name" element={<EditSmiski />} />
           </Routes>
         </main>
       </div>
