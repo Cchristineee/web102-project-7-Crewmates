@@ -2,9 +2,11 @@
 
 Submitted by: **Christine Grimadeau**
 
-This web app: **Glow Seeker - The Smiski Corner is ...**
+This web app: **Glow Seeker - The Smiski Corner** is a custom web application built with React, JavaScript, Vite, and Supabase that allows users to discover, catalog, and track glow-in-the-dark Smiskis hiding around their home.
 
 Time spent: **25** hours spent in total
+<br>
+<img width="320" height="320" alt="SmiskiCheer" src="https://github.com/user-attachments/assets/670119a3-ad3a-42c5-9dc8-40c658c7a581" />
 
 ## Required Features
 
