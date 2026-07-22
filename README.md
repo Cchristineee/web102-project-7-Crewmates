@@ -59,7 +59,7 @@ GIF created with LICEcap
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+This weeks project was actually really fun as I wanted to do a project that I am passionate about since I love collecting Smiskis! This was also my fist time using Supabase so it was a great learning exerience. 
 
 ## License
 
