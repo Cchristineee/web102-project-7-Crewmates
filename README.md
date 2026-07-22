@@ -2,7 +2,7 @@
 
 Submitted by: **Christine Grimadeau**
 
-This web app: **Glow Seeker - The Smiski Corner** is a custom web application built with React, JavaScript, Vite, and Supabase that allows users to discover, catalog, and track glow-in-the-dark Smiskis hiding around their home.
+This web app: **Glow Seeker - The Smiski Corner** is a custom web application built with React, JavaScript, Vite, and Supabase that allows users to discover, catalog, and track their glow-in-the-dark Smiskis hiding around their home.
 
 Time spent: **25** hours spent in total
 <br>
@@ -11,7 +11,6 @@ Time spent: **25** hours spent in total
 ## Required Features
 
 The following **required** functionality is completed:
-
 
 - [✅] **The web app contains a page that features a create form to add a new crewmate**
   - Users can name the crewmate
@@ -59,7 +58,19 @@ GIF created with LICEcap
 
 ## Notes
 
-This weeks project was actually really fun as I wanted to do a project that I am passionate about since I love collecting Smiskis! This was also my fist time using Supabase so it was a great learning exerience. 
+This weeks project was actually really fun as I wanted to combine my web development skills into something I actually love doing, collecting Smiskis! This was also my fist time using Supabase so it was a great learning exerience. Anyway here's some of the challanges I came across which aren't much: 
+
+### 1. Working Around Non-Standard Primary Keys
+Instead of a typical auto-incrementing integer id, I used name as the primary key for the Smiski table. This meant tweaking standard database queries everywhere in the app.
+<br>
+**Solution:**
+I updated all Supabase calls to query by .eq('name', name) instead of id. I also used encodeURIComponent and decodeURIComponent in React Router (/edit/:name) so URLs wouldn't break when a Smiski's name contained spaces or special characters.
+
+### 2. Taming Supabase Row-Level Security (RLS)
+Early on, my API requests kept getting blocked with RLS policy errors (new row violates row-level security policy), and my gallery was coming back completely empty even though rows existed in the database.
+<br>
+**Solution:**
+I dug into the Supabase SQL editor and set up explicit access policies for anon users across all CRUD operations (INSERT, SELECT, UPDATE, and DELETE).I updated all Supabase calls to query by .eq('name', name) instead of id. I also used encodeURIComponent and decodeURIComponent in React Router (/edit/:name) so URLs wouldn't break when a Smiski's name contained spaces or special characters.
 
 ## License
 
