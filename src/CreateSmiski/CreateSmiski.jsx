@@ -77,7 +77,7 @@ export default function CreateSmiski () {
             />
           </div>
 
-          {/*  ✧˖° Series Selection (Radio Options from Wireframe)  ✧˖° */}
+          {/*  ✧˖° Series Selection (Radio Options)  ✧˖° */}
           <div className="form-group series-box">
             <label>Series:</label>
             <div className="radio-group">
@@ -90,7 +90,7 @@ export default function CreateSmiski () {
                     checked={formData.series === option}
                     onChange={(e) => setFormData({ ...formData, series: e.target.value })}
                   />
-                  <span>o {option}</span>
+                  <span> {option}</span>
                 </label>
               ))}
             </div>
